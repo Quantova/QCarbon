@@ -1,6 +1,6 @@
 {
   "name": "@quantovainc/qcarbon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Quantum secure registry records for carbon credits and emission allowances. Proves the issuance attestation transfer and retirement of carbon credits, with ML-DSA-65 under FIPS 204 and Quantova time proofs. No holder data ever leaves the party that holds it.",
   "main": "index.js",
   "types": "index.d.ts",
