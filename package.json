@@ -1,0 +1,72 @@
+{
+  "name": "@quantovainc/qcarbon",
+  "version": "0.1.0",
+  "description": "Quantum secure registry records for carbon credits and emission allowances. Proves the issuance attestation transfer and retirement of carbon credits, with ML-DSA-65 under FIPS 204 and Quantova time proofs. No holder data ever leaves the party that holds it.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "wasm/qcarbon_native.js",
+    "wasm/qcarbon_native_bg.wasm",
+    "wasm/qcarbon_native.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "NOTICE",
+    "AUTHORS"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "@quantovainc/qstamp": "0.6.14"
+  },
+  "keywords": [
+    "post-quantum",
+    "quantum-safe",
+    "real-world-assets",
+    "rwa",
+    "carbon-credits",
+    "emissions",
+    "climate",
+    "carbon-registry",
+    "provenance",
+    "ml-dsa",
+    "quantova"
+  ],
+  "license": "Apache-2.0 OR MIT",
+  "author": "Quantova Inc",
+  "homepage": "https://github.com/Quantova/QCarbon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantova/QCarbon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Quantova/QCarbon/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.1",
+    "eslint-plugin-security": "3.0.1",
+    "globals": "16.5.0"
+  }
+}
